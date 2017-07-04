@@ -1,0 +1,78 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+TRANSMIT CONSULTING
+
+Theme Name: Avada Child Theme
+Author: Tom Brookes & Tom Dent
+Author URI: http://www.doubledcreative.com
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Less Mixins */
+
+.transition(@transition: all 0.2s ease-in-out){
+	-webkit-transition:@transition;
+	-moz-transition:@transition;
+	-o-transition:@transition;
+	transition:@transition;
+}
+
+.transform(@string){
+	-webkit-transform:@string;
+	-moz-transform:@string;
+	-ms-transform:@string;
+	-o-transform:@string;
+	transform:@string;
+}
+
+.border-radius(@border-radius: 2px){
+	-webkit-border-radius:@border-radius;
+	-moz-border-radius:@border-radius;
+	border-radius:@border-radius;
+}
+
+.box-shadow(@box-shadow: rgba(0,0,0,0)){
+	-webkit-box-shadow:@box-shadow;
+	-moz-box-shadow:@box-shadow;
+	box-shadow:@box-shadow;
+}
+
+.bg-clip(){
+	-moz-background-clip:padding!important;
+	-webkit-background-clip:padding!important;
+	background-clip:padding-box!important;
+}
+
+.uppercase(){text-transform:uppercase!important;}
+
+.polygon(){
+	-webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+	clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+/* Font Mixins 
+.font-light(){font-family:'Proxima N W01 Light'!important;font-weight:100!important;}
+.font-reg(){font-family:'Proxima N W01 Reg'!important;font-weight:300!important;}
+.font-xbold(){font-family:'Proxima N W01 Xbold'!important;font-weight:300!important;letter-spacing:-0.02em!important;}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* SITE COLOURS */
+
+@white:  		#FFF!important;			/* White           										  */
+@black:			#000!important;			/* Black        										  */
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+body{-webkit-font-smoothing: antialiased!important;}
+a:hover{.transition(@transition: all 0.2s ease-in-out);}
+.hover-type-zoomin:hover{
+	.img{opacity:1!important;}
+}
+iframe{border:none!important;}
