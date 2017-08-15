@@ -10,19 +10,6 @@ function avada_lang_setup() {
 	load_child_theme_textdomain( 'Avada', $lang );
 }
 add_action( 'after_setup_theme', 'avada_lang_setup' );
-   
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-/* Load Fonts dot com 
-
-function extra_css () {
-	wp_register_style( 'font', '//fast.fonts.net/cssapi/fea79cb6-7af7-4a1b-84a3-ce0e006b93de.css' );
-	wp_enqueue_style( 'font' );
-} 
-
-add_action('wp_print_styles', 'extra_css');
 
     
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -35,7 +22,7 @@ function childtheme_scripts() {
 wp_enqueue_style('less', get_stylesheet_directory_uri() .'/css/style.less');
 add_filter('style_loader_tag', 'my_style_loader_tag_function');
 
-wp_enqueue_script('less', get_stylesheet_directory_uri() .'/scripts/less.min.js', array('jquery'),'2.7.1');
+wp_enqueue_script('less', get_stylesheet_directory_uri() .'/scripts/less.min.js', array('jquery'),'3.0.0');
 
 }
 add_action('wp_enqueue_scripts','childtheme_scripts', 150);
@@ -110,6 +97,17 @@ add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
 add_filter("gform_init_scripts_footer", "init_scripts");
 function init_scripts() {
 return true;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* Change Gravity Button Type To FontAwesome */
+
+add_filter("gform_submit_button_2", "form_submit_button", 10, 2);
+function form_submit_button($button, $form){
+return "<button class='button' id='gform_submit_button_{$form["id"]}'><i class='fa fa-fw fa-envelope'></i></button>";
 }
 
 
