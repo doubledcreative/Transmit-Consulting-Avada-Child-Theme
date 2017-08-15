@@ -1,0 +1,335 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+TRANSMIT CONSULTING
+
+Theme Name: Avada Child Theme
+Author: Tom Brookes & Tom Dent
+Author URI: http://www.doubledcreative.com
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+CONTENTS
+
+- Blog
+- Media Queries
+	- 1024px
+	- 800px
+	- 500px
+	
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* MASONRY BLOG HUB */
+
+.fusion-blog-layout-masonry-wrapper, .fusion-blog-archive{margin: 40px 10% 80px;
+	.fusion-blog-layout-masonry{
+		.fusion-post-masonry{
+			.fusion-post-wrapper{border: none!important;
+				
+				.fusion-masonry-element-container{background-position: top center!important;
+					.fusion-rollover{
+						.fusion-rollover-content{
+							.fusion-rollover-title{font-size: 24px!important; line-height: 34px!important;
+								a{.font-semi(); color: @white; line-height: inherit; font-size: inherit;}
+							}
+						}
+					}
+				}
+				
+				.fusion-post-content-wrapper{background-color: @yellow; padding: 20px 30px 25px!important;
+					
+					.fusion-post-content{color: @slate; line-height: 26px!important;
+						.fusion-post-title, .entry-title{.font-reg(); font-size: 24px!important; line-height: 34px!important; color: @slate; margin-bottom: 10px;
+							a{}
+						}
+						.fusion-single-line-meta{}
+						.fusion-post-content-container{}
+					}
+					
+					.fusion-meta-info{
+						.fusion-alignleft{
+							.fusion-read-more{}
+						}
+					}
+					
+				}
+				
+			}
+		}
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* BLOG SINGLE PAGE */
+
+/* Blog Container - Side Padding */
+#posts-container{padding: 40px 10%;}
+
+/* Blog Single Post - Title Bar Styling */
+.category-blog, .archive, .single-post{
+	.fusion-page-title-bar{height: auto!important; padding: 0!important; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+		.fusion-page-title-row{padding-left: 10%; padding-right: 10%; background-color: rgba(0, 0, 0, 0);
+			.fusion-page-title-wrapper{
+				.fusion-page-title-captions{padding-top: 30px; padding-bottom: 30px;}
+				.fusion-page-title-secondary{
+					.fusion-breadcrumbs, a{.font-bold(); margin: 5px 0;}
+				}
+			}
+		}
+	}
+}
+
+/* Blog Single Post - Side Bar Styling */
+.single-post{
+	#sidebar{
+		.widget{background: @grey5!important; padding: 0!important;
+			&:last-of-type{margin-bottom: 0;}
+			.widget-title{.font-semi(); font-size: 18px!important; line-height: 24px!important; padding: 16px 20px!important; margin: 0!important; background-color: @slate; color: @white;}
+			ul{
+				li{padding: 10px 0; border-color: @grey4;
+					&:hover{background: @yellow;}
+					&:last-of-type{border: none;}
+					a{line-height: 24px; padding: 5px 33px; display: block; color: @slate;
+						&:before{color: @slate;}
+						&:hover{color: ;
+							&:before{color: ;}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Blog Single Post - Styling */
+.single-post{
+	#main{padding-left: 10%; padding-right: 10%; background-color: @white;
+		p{margin: 0!important; padding: 0 0 30px!important;}
+		.fusion-button{margin: 0 0 60px!important;}
+		.fusion-imageframe{margin: 0 0 40px!important;}
+	}
+}
+
+/* Blog Single Post - Meta Data Styling */
+.category-blog, .single-post, .post-template-default{
+	.fusion-meta-info{margin-bottom: 0; padding-top: 10px; border-top: 1px solid @grey4; border-bottom: none; font-size: 12px; color: @slate; .font-semi();}
+}
+
+
+/* Blog Single Post - Meta Data Styling
+.category-blog, .single-post, .post-template-default{
+	.fusion-meta-info{display: inline-block; margin-bottom: 0; padding: 0 10px; border: none!important; font-size: 12px; background-color: @yellow; color: @slate; .font-semi(); .border-radius(@border-radius: 4px);}
+} */
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* PAGINATION */
+
+/* Pagination - Number Styling */
+.pagination{margin-bottom: 55px; text-align: center; width: 100%;
+	
+	.current{background-color: @yellow; border: none!important; color: @slate; .border-radius(@border-radius: 4px);}
+	
+	.inactive{background-color: lighten(@slate, @30per); border: none!important; color: @white; .border-radius(@border-radius: 4px);
+		&:hover{background-color: @slate; color: @white;}
+	}
+	
+}
+
+/* Pagination - Previous & Next Button */
+.pagination-prev, .pagination-next{color: lighten(@slate, @30per); padding: 8px 2px!important; margin: 0 15px!important;
+	&:after, &:before{color: lighten(@slate, @30per);}
+	&:hover{color: @slate;
+		&:after, &:before{color: @slate;}
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* CASE STUDIES */
+
+.ddc-case-studies-container{margin: -170px 0 0!important; padding: 154px 15% 80px!important;
+	.fusion-recent-posts{margin-bottom: 0!important;
+		.fusion-columns{
+			.fusion-column{
+				.recent-posts-content{
+					.entry-title{.font-reg(); font-size: 24px!important; line-height: 32px!important; margin-bottom: 10px;
+						a{color: @slate;}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 1024px ///////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 1200px) {
+	
+	
+	/* CASE STUDIES */
+	
+	.ddc-case-studies-container{margin:0!important; padding: 8% 15% 10%!important;
+		.fusion-title-size-six{margin-bottom: 40px!important;}
+	}
+	
+
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 1024px ///////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 1024px) {
+	
+	
+	/* MASONRY BLOG HUB */
+	
+	.fusion-blog-layout-masonry-wrapper, .fusion-blog-archive{margin: 40px 40px 25px;
+		.fusion-blog-layout-masonry{
+			.fusion-post-masonry{
+				.fusion-post-wrapper{
+					.fusion-masonry-element-container{background-position: top center!important;
+						.fusion-rollover{
+							.fusion-rollover-content{
+								.fusion-rollover-title{font-size: 24px!important; line-height: 32px!important;
+									a{.font-semi(); color: @white; line-height: inherit; font-size: inherit;}
+								}
+							}
+						}
+					}
+					.fusion-post-content-wrapper{padding: 18px 25px 20px!important;
+						.fusion-post-content{
+							.fusion-post-title, .entry-title{font-size: 20px!important; line-height: 28px!important;}
+						}						
+					}
+				}
+			}
+		}
+	}
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	/* CASE STUDIES */
+	
+	.ddc-case-studies-container{margin:0!important; padding: 8% 10% 10%!important;
+		.fusion-title-size-six{margin-bottom: 40px!important;}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 800px ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 800px) {
+	
+	
+	/* MASONRY BLOG HUB */
+	
+	.fusion-blog-layout-masonry-wrapper, .fusion-blog-archive{margin: 40px 30px 25px;}
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	/* CASE STUDIES */
+	
+	.ddc-case-studies-container{margin:0!important; padding: 8% 15% 6%!important;}
+	
+	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 500px ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 500px) {
+	
+	
+	/* Blog Single Post - Styling */
+	.single-post{
+		#main{padding: 60px 30px;}
+	}
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	/* MASONRY BLOG */
+	
+	.fusion-blog-layout-masonry-wrapper, .fusion-blog-archive{margin: 30px 30px 15px;}
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	/* BLOG SINGLE PAGE */
+	
+	
+	/* Blog Single Post - Title Bar Styling */
+	.category-blog, .archive, .single-post{
+		.fusion-page-title-bar{
+			.fusion-page-title-row{padding-left: 30px; padding-right: 30px;}
+		}
+	}
+	
+	/* Blog Single Post - Styling */
+	.single-post{
+		#main{padding-left: 30px; padding-right: 30px;}
+	}
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	/* CASE STUDIES */
+	
+	.ddc-case-studies-container{margin:0!important; padding: 60px 30px 20px!important;}
+	
+	
+}
