@@ -37,16 +37,18 @@ CONTENTS
 	.fusion-main-menu{
 		.fusion-menu{
 			.menu-item{
-				a{.font-semi(); -webkit-font-smoothing: antialiased; line-height: 0!important; height: 30px!important; .border-radius(@border-radius: 4px); padding: 18px 12px; margin: 37px 0;
+				a{.font-semi(); -webkit-font-smoothing: antialiased; line-height: 0!important; height: 30px!important;.border-radius(@border-radius: 3px);padding:20px 16px 22px;margin:34px 0;
 					&:hover{background-color: @slate;}
 				}
 			}
 			.current-menu-item, .current-menu-parent{
-				a{background-color: @slate;}	
+				a{background-color: @white; color: @slate;
+					&:hover{background-color: @white; color: @slate;}
+				}
 			}
 			.sub-menu{border-top: none!important; margin-left: -15px;
 				li{border-bottom: 1px solid darken(@grey4, @10per);
-					a{border-bottom: none!important; line-height: 30px!important; padding: 18px 27px!important; margin: 0!important; .border-radius(@border-radius: 0); background-color: @grey5;
+					a{border-bottom: none!important; line-height: 30px!important; padding:15px 25px!important; margin: 0!important; .border-radius(@border-radius: 0); background-color: @grey5;
 						&:hover{background-color: @grey4;}
 					}
 					&:last-of-type{border-bottom: none!important;}
@@ -67,13 +69,16 @@ CONTENTS
 				.fusion-logo{}
 				.fusion-menu{
 					.menu-item{
-						a{margin: 15px 0 14px;}
+						a{margin:12px 0 11px;}
 					}
+					.sub-menu{.box-shadow(@box-shadow: rgba(0,0,0,1));}
 				}		
 			}
 		}
 	}
 }	
+
+.layout-boxed-mode .fusion-is-sticky .fusion-header-v1 .fusion-sticky-shadow, .fusion-is-sticky .fusion-header-v1 .fusion-sticky-shadow{.box-shadow(@box-shadow: none)!important;}
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -100,9 +105,7 @@ CONTENTS
 							}
 						}			
 						.footer-col-2{
-							
 							.services-heading{padding-top: 15px!important; padding-bottom: 13px!important;}
-							 
 							.ddc-footer-menu{
 								.widget{margin: 0!important;
 									.menu-footer-menu-container{
@@ -115,11 +118,8 @@ CONTENTS
 										}
 									}
 								}
-							}
-							
-								 
-						}	
-								
+							}		 
+						}			
 						.footer-col-3{
 							.newsletter-heading{padding-top: 15px!important; padding-bottom: 25px!important;}
 							.social-heading{padding-top: 25px!important; padding-bottom: 20px!important;}
