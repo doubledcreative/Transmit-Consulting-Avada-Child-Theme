@@ -1,0 +1,365 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+TRANSMIT CONSULTING
+
+Theme Name: Avada Child Theme
+Author: Tom Brookes & Tom Dent
+Author URI: http://www.doubledcreative.com
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+CONTENTS
+
+- Header
+- Footer
+- Media Queries
+	- 1152px (Mobile Header Switch)
+	- 1024px
+	- 800px
+	- 500px
+	
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* HEADER */
+
+/* Main Header Logo */
+.fusion-header-wrapper{
+	.fusion-header{padding-left: 40px; padding-right: 40px;}
+}
+
+/* Main Header */
+.fusion-header-wrapper{
+	.fusion-main-menu{
+		.fusion-menu{
+			.menu-item{
+				a{.font-semi(); -webkit-font-smoothing: antialiased; line-height: 0!important; height: 30px!important; .border-radius(@border-radius: 4px); padding: 18px 12px; margin: 37px 0;
+					&:hover{background-color: @slate;}
+				}
+			}
+			.current-menu-item, .current-menu-parent{
+				a{background-color: @slate;}	
+			}
+			.sub-menu{border-top: none!important; margin-left: -15px;
+				li{border-bottom: 1px solid darken(@grey4, @10per);
+					a{border-bottom: none!important; line-height: 30px!important; padding: 18px 27px!important; margin: 0!important; .border-radius(@border-radius: 0); background-color: @grey5;
+						&:hover{background-color: @grey4;}
+					}
+					&:last-of-type{border-bottom: none!important;}
+				}
+				.current-menu-item{
+					a{background-color: @grey5;}	
+				}
+			}
+		}	
+	}
+}
+
+/* Sticky Header */
+.fusion-is-sticky{
+	.fusion-sticky-menu-1{
+		.fusion-header{
+			.fusion-row{
+				.fusion-logo{}
+				.fusion-menu{
+					.menu-item{
+						a{margin: 15px 0 14px;}
+					}
+				}		
+			}
+		}
+	}
+}	
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* FOOTER */
+
+.fusion-footer{
+	.fusion-widget-area{padding: 0!important;
+		.fusion-row{
+			.fusion-columns{
+				.fusion-column{margin: 0!important;
+					.ddc-footer{background-color: @slate; margin: 0!important; padding: 60px 10% 70px!important;
+						.fusion-title{
+							h4{.font-semi(); color: @yellow; font-size: 22px!important; line-height: 28px!important;}
+						}
+						p{color: @white;}			
+						a{color: @white;
+							&:hover{color: @yellow;}
+						}		
+						.footer-col-1{
+							.footer-logo{margin-bottom: 0;
+								img{max-width: 178px;}
+							}
+						}			
+						.footer-col-2{
+							
+							.services-heading{padding-top: 15px!important; padding-bottom: 13px!important;}
+							 
+							.ddc-footer-menu{
+								.widget{margin: 0!important;
+									.menu-footer-menu-container{
+										.menu{
+											.menu-item{padding: 0; line-height: 38px; border-bottom: none;
+												a{
+													&:before{display: none;}
+												}
+											}
+										}
+									}
+								}
+							}
+							
+								 
+						}	
+								
+						.footer-col-3{
+							.newsletter-heading{padding-top: 15px!important; padding-bottom: 25px!important;}
+							.social-heading{padding-top: 25px!important; padding-bottom: 20px!important;}
+							.fusion-social-links{margin-top: 0;
+								.fusion-social-networks-wrapper{float: left;
+									a{background-color: @grey1; border-color: @grey1;
+										&:hover{color: @white!important;}
+									}
+								}
+							}
+						}			
+					}
+				}
+			}
+		}
+	}	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 1152px ///////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 1152px) {
+	
+	
+	/* NAVIGATION */
+
+	/* Mobile Header */
+	.fusion-mobile-menu-design-modern{
+		.fusion-header{padding: 12px 20px!important; height: 65px!important;
+			.fusion-row{
+				.fusion-mobile-menu-icons{
+					.fusion-icon{font-size: 25px; padding: 20px 20px 20px 50px; margin: -12px -23px;}
+				}
+				.fusion-logo{
+					.fusion-logo-link{width: 200px!important; margin-top: 6px;}
+				}
+				.fusion-mobile-nav-holder{padding-top: 11px;
+					.fusion-mobile-menu{
+						.fusion-mobile-nav-item{
+							a{
+								.menu-text{.font-semi();}
+							}
+							.fusion-open-submenu{width: inherit; margin-right: 10px; padding: 0 23px;
+								&:before{}
+							}
+							.sub-menu{
+								.fusion-mobile-nav-item{
+									a{.font-semi(); background-color: @grey5; color: @slate; font-size: 16px; border-bottom: 1px solid darken(@grey4, @10per);
+										&:hover{background-color: @grey4;}
+										&:before{display: none;}
+									}
+								}	
+								.fusion-mobile-current-nav-item{
+									a{background-color: @grey4;}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 1024px ///////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 1024px) {
+	
+	
+	/* FOOTER */
+	
+	.fusion-footer{
+		.fusion-widget-area{padding: 0!important;
+			.fusion-row{
+				.fusion-columns{
+					.fusion-column{margin: 0!important;
+						.ddc-footer{margin: 0!important; padding: 70px 10% 80px!important;
+							.fusion-title{
+								h4{font-size: 22px!important; line-height: 28px!important;}
+							}	
+							.footer-col-1{width: 100%!important; margin: 0 0 20px!important;
+								.footer-logo{margin-bottom: 4px;
+									img{max-width: 178px;}
+								}
+							}			
+							.footer-col-2{width: 50%!important; margin: 0!important;
+								.services-heading{padding-top: 15px!important; padding-bottom: 13px!important;}
+								.ddc-footer-menu{
+									.widget{margin: 0!important;
+										.menu-footer-menu-container{
+											.menu{
+												.menu-item{padding: 0; line-height: 38px; border-bottom: none;
+													a{
+														&:before{display: none;}
+													}
+												}
+											}
+										}
+									}
+								}
+							}			
+							.footer-col-3{width: 50%!important; margin: 0!important;
+								.newsletter-heading{padding-top: 15px!important; padding-bottom: 25px!important;}
+								.social-heading{padding-top: 25px!important; padding-bottom: 20px!important;}
+							}			
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 800px ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 800px) {
+
+	
+	/* FOOTER */
+	
+	.fusion-footer{
+		.fusion-widget-area{padding: 0!important;
+			.fusion-row{
+				.fusion-columns{
+					.fusion-column{margin: 0!important;
+						.ddc-footer{background-color: @slate; margin: 0!important; padding: 58px 10% 65px!important;
+							.fusion-title{
+								h4{font-size: 22px!important; line-height: 28px!important;}
+							}	
+							.footer-col-1{width: 100%!important; margin: 0 0 19px!important;
+								.footer-logo{margin-bottom: 4px;
+									img{max-width: 178px;}
+								}
+							}			
+							.footer-col-2{width: 100%!important; margin: 0 0 15px!important;
+								.services-heading{margin: 0!important; padding-top: 15px!important; padding-bottom: 13px!important;}
+								.ddc-footer-menu{
+									.widget{margin: 0!important;
+										.menu-footer-menu-container{
+											.menu{
+												.menu-item{padding: 0; line-height: 38px; border-bottom: none;
+													a{
+														&:before{display: none;}
+													}
+												}
+											}
+										}
+									}
+								}
+							}			
+							.footer-col-3{width: 100%!important; margin: 0!important;
+								.newsletter-heading{margin: 0!important; padding-top: 15px!important; padding-bottom: 25px!important;}
+								.social-heading{margin: 0!important; padding-top: 45px!important; padding-bottom: 20px!important;}
+							}			
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 500px ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 500px) {
+	
+	
+	/* FOOTER */
+	
+	.fusion-footer{
+		.fusion-widget-area{padding: 0!important;
+			.fusion-row{
+				.fusion-columns{
+					.fusion-column{margin: 0!important;
+						.ddc-footer{background-color: @slate; margin: 0!important; padding: 40px 30px 50px!important;
+							.fusion-title{
+								h4{font-size: 22px!important; line-height: 28px!important;}
+							}
+							.footer-col-1{width: 100%!important; margin: 0 0 19px!important;
+								.footer-logo{margin-bottom: 4px;
+									img{max-width: 178px;}
+								}
+							}			
+							.footer-col-2{width: 100%!important; margin: 0 0 15px!important;
+								.services-heading{padding-top: 15px!important; padding-bottom: 13px!important;}
+							}			
+							.footer-col-3{width: 100%!important; margin: 0!important;
+								.newsletter-heading{padding-top: 15px!important; padding-bottom: 25px!important;}
+								.social-heading{padding-top: 45px!important; padding-bottom: 20px!important;}
+							}		
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+}
