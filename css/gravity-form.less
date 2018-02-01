@@ -15,8 +15,6 @@ CONTENTS
 
 - Gravity Form
 - Media Queries
-	- 1024px
-	- 800px
 	- 500px
 	
 
@@ -28,7 +26,7 @@ CONTENTS
 /* Form Styling */
 .input-height(){height: 55px;}
 .input-text(){color: @slate; font-size: 18px!important;}
-.input-text-placeholder(){color: lighten(@slate, @40per);}
+.input-text-placeholder(){color: @slate!important;}
 .input-background(){padding: 10px 15px!important; background-color: @white;}
 .input-focus(){background-color: lighten(@yellow, @40per);}
 .input-border(){border: none!important;}
@@ -83,7 +81,7 @@ CONTENTS
 			}
 		}
 	}
-	.gform_footer{width: 100%; display: block; margin: 40px 0 0 0!important; padding: 0!important;
+	.gform_footer{width: 100%; display: block; margin: 20px 0 0 0!important; padding: 0!important;
 		input[type=submit]{display: block!important; margin:0 auto!important; .submit-button();}
 	}
 }
@@ -99,6 +97,22 @@ CONTENTS
 ::-moz-placeholder{.input-text-placeholder();}
 :-ms-input-placeholder{.input-text-placeholder();}
 .placeholder{.input-text-placeholder();}
+
+
+/* Check Box Styling */
+.gform_wrapper{
+	.gform_body{
+		.gform_fields{
+			.gfield{
+				.ginput_container_checkbox{
+					.gfield_checkbox{
+						input{height: auto!important; -webkit-appearance: checkbox!important; -moz-appearance: checkbox!important; appearance: checkbox!important;}
+					}
+				}
+			}
+		}
+	}
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
