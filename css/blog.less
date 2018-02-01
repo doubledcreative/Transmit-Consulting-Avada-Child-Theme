@@ -15,6 +15,7 @@ CONTENTS
 
 - Blog
 - Media Queries
+	- 1200px
 	- 1024px
 	- 800px
 	- 500px
@@ -123,12 +124,6 @@ CONTENTS
 }
 
 
-/* Blog Single Post - Meta Data Styling
-.category-blog, .single-post, .post-template-default{
-	.fusion-meta-info{display: inline-block; margin-bottom: 0; padding: 0 10px; border: none!important; font-size: 12px; background-color: @yellow; color: @slate; .font-semi(); .border-radius(@border-radius: 4px);}
-} */
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -159,12 +154,38 @@ CONTENTS
 
 /* CASE STUDIES */
 
-.ddc-case-studies-container{margin: -170px 0 0!important; padding: 154px 15% 80px!important;
+/* Case Studies - On White Background */
+.ddc-case-studies-white{
+	.fusion-recent-posts{margin-bottom: 0!important;
+		.fusion-columns{
+			.fusion-column{margin-bottom: 30px;
+				
+				.fusion-flexslider, .flexslider{
+					.slides{.border-radius(@border-radius: 4px 4px 0 0); border: 1px solid darken(@grey5, @5per); border-bottom: none!important;}			
+				}
+
+				.recent-posts-content{padding: 35px 40px; .border-radius(@border-radius: 0 0 4px 4px); border: 1px solid darken(@grey5, @5per); background-color: @grey5; 
+					.entry-title{.font-reg(); zoom: 0.8; margin: 0 0 25px;
+						a{color: @slate;}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Case Studies - On Yellow Background */
+.ddc-case-studies-yellow{
 	.fusion-recent-posts{margin-bottom: 0!important;
 		.fusion-columns{
 			.fusion-column{
-				.recent-posts-content{
-					.entry-title{.font-reg(); font-size: 24px!important; line-height: 32px!important; margin-bottom: 10px;
+				
+				.fusion-flexslider, .flexslider{
+					.slides{.border-radius(@border-radius: 4px 4px 0 0);}
+				}
+				
+				.recent-posts-content{padding: 35px 40px; .border-radius(@border-radius: 0 0 4px 4px); background-color: lighten(@yellow, @10per); 
+					.entry-title{.font-reg(); zoom: 0.8; margin: 0 0 25px;
 						a{color: @slate;}
 					}
 				}
@@ -179,8 +200,9 @@ CONTENTS
 
 
 
+
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
-/* MEDIA QUERIES 1024px ///////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 1200px ///////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
@@ -189,8 +211,8 @@ CONTENTS
 	
 	/* CASE STUDIES */
 	
-	.ddc-case-studies-container{margin:0!important; padding: 8% 15% 10%!important;
-		.fusion-title-size-six{margin-bottom: 40px!important;}
+	.ddc-case-studies-white, .ddc-case-studies-yellow{
+		.fusion-title-size-six{padding-bottom: 40px!important;}
 	}
 	
 
@@ -234,17 +256,7 @@ CONTENTS
 			}
 		}
 	}
-	
-	
-	////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-	/* CASE STUDIES */
-	
-	.ddc-case-studies-container{margin:0!important; padding: 8% 10% 10%!important;
-		.fusion-title-size-six{padding-bottom: 40px!important;}
-	}
-	
 	
 }
 
@@ -265,14 +277,6 @@ CONTENTS
 	/* MASONRY BLOG HUB */
 	
 	.fusion-blog-layout-masonry-wrapper, .fusion-blog-archive{margin: 40px 30px 25px;}
-	
-	
-	////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-	/* CASE STUDIES */
-	
-	.ddc-case-studies-container{margin:0!important; padding: 8% 15% 6%!important;}
 	
 	
 }
@@ -322,14 +326,6 @@ CONTENTS
 	.single-post{
 		#main{padding-left: 30px; padding-right: 30px;}
 	}
-	
-	
-	////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-	/* CASE STUDIES */
-	
-	.ddc-case-studies-container{margin:0!important; padding: 60px 30px 20px!important;}
 	
 	
 }
