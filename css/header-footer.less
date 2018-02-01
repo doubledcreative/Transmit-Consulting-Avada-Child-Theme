@@ -95,10 +95,12 @@ CONTENTS
 						.fusion-title{
 							h4{.font-semi(); color: @yellow; font-size: 22px!important; line-height: 28px!important;}
 						}
-						p{color: @white;}			
-						a{color: @white;
-							&:hover{color: @yellow;}
-						}		
+						p{color: @white;
+							a{color:@white!important;border-bottom:1px dotted @yellow!important;
+								&:hover{color: @yellow;}
+							}
+						}			
+								
 						.footer-col-1{
 							.footer-logo{margin-bottom: 0;
 								img{max-width: 178px;}
@@ -111,8 +113,9 @@ CONTENTS
 									.menu-footer-menu-container{
 										.menu{
 											.menu-item{padding: 0; line-height: 38px; border-bottom: none;
-												a{
+												a{border-bottom:1px dotted @yellow!important;color:@white!important;
 													&:before{display: none;}
+													&:hover{color:@yellow;}
 												}
 											}
 										}
@@ -126,7 +129,7 @@ CONTENTS
 							.fusion-social-links{margin-top: 0;
 								.fusion-social-networks-wrapper{float: left;
 									a{background-color: @grey1; border-color: @grey1;
-										&:hover{color: @white!important;}
+										&:hover{color:@slate!important;background-color:@yellow;border-color:@yellow;}
 									}
 								}
 							}
